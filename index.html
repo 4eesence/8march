@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@formkit/auto-animate@1.0.0/dist/auto-animate.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>С Международным Женским Днём!</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="flowers">
+                <div class="flower"></div>
+                <div class="flower"></div>
+                <div class="flower"></div>
+            </div>
+            <p>Пусть ваш день будет наполнен радостью, улыбками и теплом!</p>
+        </section>
+
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="https://urengoy-podzemremont.gazprom.ru/d/story/9b/411/prostaya-otkritka-s-8-marta.orig.jpg" alt="Цветы 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://csoor.organizations.mchs.gov.ru/uploads/resize_cache/news/2022-03-08/deti-sotrudnikov-centra-lider-pozdravili-zhenshchin-s-8-marta_16467272921638110247__2000x2000.jpg" alt="Цветы 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://www.susu.ru/sites/default/files/field/image/8_0.png" alt="Цветы 3">
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Поздравления</h2>
+            <div class="cards">
+                <div class="card" onclick="toggleDescription(this)">
+                    <div class="card-header">Счастья!</div>
+                    <div class="card-description">
+                        Пусть каждый день приносит радость и вдохновение. Оставайтесь такой же прекрасной и сильной!
+                    </div>
+                </div>
+                <div class="card" onclick="toggleDescription(this)">
+                    <div class="card-header">Здоровья!</div>
+                    <div class="card-description">
+                        Крепкого здоровья, бодрости духа и прекрасного настроения на каждый день!
+                    </div>
+                </div>
+                <div class="card" onclick="toggleDescription(this)">
+                    <div class="card-header">Любви!</div>
+                    <div class="card-description">
+                        Пусть ваше сердце всегда будет наполнено теплом, заботой и любовью!
+                    </div>
+                </div>
+                <div class="card" onclick="toggleDescription(this)">
+                    <div class="card-header">Удачи!</div>
+                    <div class="card-description">
+                        Пусть удача сопровождает вас во всех начинаниях, а каждый день приносит новые возможности!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 С 8 Марта!</p>
+    </footer>
+    <script>
+        function toggleDescription(card) {
+            const description = card.querySelector('.card-description');
+            description.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>
